@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 
-namespace ETS2_Diren_Baba_Hack.CheatEngine
+namespace GiriftStudio_ETS2_Money_Hack.CheatEngine
 {
     /// <summary>
     /// Represents an access to a remote process memory
@@ -343,6 +343,11 @@ namespace ETS2_Diren_Baba_Hack.CheatEngine
         {
             byte[] buffer = BitConverter.GetBytes(value);
             WriteMemory(address, buffer, 8);
+        }
+
+        public static implicit operator Memory(VAMemory v)
+        {
+            throw new NotImplementedException();
         }
     }
 }

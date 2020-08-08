@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace ETS2_Diren_Baba_Hack.CheatEngine
+namespace GiriftStudio_ETS2_Money_Hack.CheatEngine
 {
     /// <summary>
     /// Win32 methods

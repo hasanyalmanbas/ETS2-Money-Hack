@@ -8,9 +8,10 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>GiriftStudio_ETS2_Money_Hack</RootNamespace>
     <AssemblyName>ETS2 Money Hack</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -51,7 +52,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="VAMemory">
-      <HintPath>..\..\..\..\Desktop\VAMemory.dll</HintPath>
+      <HintPath>libs\VAMemory.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

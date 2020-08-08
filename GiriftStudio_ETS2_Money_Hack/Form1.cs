@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GiriftStudio_ETS2_Money_Hack.CheatEngine;
+using System;
 using System.Diagnostics;
 using System.Windows.Forms;
 using Utilities;
@@ -10,7 +11,7 @@ namespace GiriftStudio_ETS2_Money_Hack
         private Process[] processes;
         private IntPtr BaseAdress;
         private Process myProcess;
-        private VAMemory memory;
+        private Memory memory;
 
         private IntPtr moneyIntPtr;
         private IntPtr speedIntPtr;
@@ -83,7 +84,10 @@ namespace GiriftStudio_ETS2_Money_Hack
 
             int addMoney = Int32.Parse(moneyAddCount.Text);
 
-            if (memory.WriteInt32(moneyIntPtr, currentMoney + addMoney))
+
+            memory.WriteInt32(moneyIntPtr, currentMoney + addMoney);
+
+            if (currentMoney + addMoney == getMoneyCount())
             {
                 moneyAddCount.Text = "";
                 CurrentMoneyText.Text = getMoneyCount().ToString();
